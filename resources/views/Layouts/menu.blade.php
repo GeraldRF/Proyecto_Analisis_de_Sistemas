@@ -38,7 +38,7 @@
                 <div class="menu-inicio">
                     <ul class="nav justify-content-center">
                         <li class="nav-item ">
-                            <a class="nav-link btn-inicio" href="#">Inicio</a>
+                            <a class="nav-link btn-inicio" href="/">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn-inicio" href="#">Más</a>

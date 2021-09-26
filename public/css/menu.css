@@ -30,10 +30,12 @@
 .btn-sesion-i {
     color: rgb(36, 36, 36) !important;
     background-color: white;
+    border: solid 0.5px white;
 }
 
 .btn-sesion-r {
     color: white !important;
     border: solid 0.5px white;
     background-color: transparent;
+    margin-right: 10px;
 }
