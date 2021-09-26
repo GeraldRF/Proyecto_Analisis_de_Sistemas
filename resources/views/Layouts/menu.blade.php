@@ -29,11 +29,13 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
-
+            <img src="imagenes/Logo.png" style="max-width: 100px; margin-left:5px;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                {{-- <span class="navbar-toggler-icon"></span> --}}
+                <img src="imagenes/menu.png" style="max-width: 40px">
             </button>
+
             <div class="collapse navbar-collapse contenedor-menu" id="navbarSupportedContent">
                 <div class="menu-inicio">
                     <ul class="nav justify-content-center">
