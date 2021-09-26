@@ -38,23 +38,23 @@
                 <div class="menu-inicio">
                     <ul class="nav justify-content-center">
                         <li class="nav-item ">
-                            <a class="nav-link btn-menu" href="#">Inicio</a>
+                            <a class="nav-link btn-inicio" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-menu" href="#">Más</a>
+                            <a class="nav-link btn-inicio" href="#">Más</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link btn-menu" href="#">Menos</a>
+                            <a class="nav-link btn-inicio" href="#">Menos</a>
                         </li>
                     </ul>
                 </div>
                 <div class="menu-sesion">
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Registrate</a>
+                            <a class="nav-link btn-sesion-r" href="/registrarse">Registrate</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Iniciar sesion</a>
+                            <a class="nav-link btn-sesion-i" href="/iniciar-sesion">Iniciar sesion</a>
                         </li>
                     </ul>
                 </div>

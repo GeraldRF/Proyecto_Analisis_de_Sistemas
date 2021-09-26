@@ -1,8 +1,14 @@
-.btn-menu {
+.contenedor-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-inicio {
     color: white !important;
 }
 
-.btn-menu:hover {
+.btn-inicio:hover {
     color: rgb(36, 36, 36) !important;
     background-color: white;
 }
@@ -21,8 +27,13 @@
     gap: initial;
 }
 
-.contenedor-menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.btn-sesion-i {
+    color: rgb(36, 36, 36) !important;
+    background-color: white;
+}
+
+.btn-sesion-r {
+    color: white !important;
+    border: solid 0.5px white;
+    background-color: transparent;
 }
