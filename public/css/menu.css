@@ -1,0 +1,28 @@
+.btn-menu {
+    color: white !important;
+}
+
+.btn-menu:hover {
+    color: rgb(36, 36, 36) !important;
+    background-color: white;
+}
+
+.menu-inicio {
+    min-width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    gap: initial;
+}
+
+.menu-sesion {
+    min-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: initial;
+}
+
+.contenedor-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
