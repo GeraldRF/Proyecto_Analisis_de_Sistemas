@@ -28,8 +28,8 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
-            <img src="imagenes/Logo.png" style="max-width: 100px; margin-left:5px;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark sombra-nav">
+            <img src="imagenes/Logo.png" style="max-width: 100px; margin:0 5px 0 5px;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 {{-- <span class="navbar-toggler-icon"></span> --}}
@@ -51,19 +51,37 @@
                     </ul>
                 </div>
                 <div class="menu-sesion">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link btn-sesion-r" href="/registrarse">Registrate</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-sesion-i" href="/iniciar-sesion">Iniciar sesion</a>
-                        </li>
-                    </ul>
+                    @if (!Auth::user())
+                        <ul class="nav justify-content-center" style="gap: 10px">
+                            <li class="nav-item">
+                                <a class="nav-link btn-sesion-r" href="/registrarse">Registrate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-sesion-i" href="/iniciar-sesion">Iniciar sesion</a>
+                            </li>
+                        </ul>
+                    @else
+                        <ul class="nav justify-content-center" style="gap: 20px">
+                            <li class="nav-item" style="align-self: center;">
+                                <span style="color: white;">{{ Auth::user()->name }}</span>
+                            </li>
+                            <li class="nav-item">
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <a class="nav-link btn-sesion-i" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                        {{ __('Cerrar sesión') }}
+                                    </a>
+                                </form>
+                            </li>
+                        </ul>
+
+                    @endif
                 </div>
             </div>
         </nav>
     </header>
-
+    
     @yield('body')
 
     <footer>

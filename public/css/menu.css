@@ -17,25 +17,27 @@
     min-width: 50%;
     display: flex;
     justify-content: flex-start;
-    gap: initial;
 }
 
 .menu-sesion {
     min-width: 50%;
     display: flex;
     justify-content: flex-end;
-    gap: initial;
 }
 
 .btn-sesion-i {
-    color: rgb(36, 36, 36) !important;
-    background-color: white;
-    border: solid 0.5px white;
-}
-
-.btn-sesion-r {
     color: white !important;
     border: solid 0.5px white;
     background-color: transparent;
-    margin-right: 10px;
+}
+
+.btn-sesion-r {
+    color: rgb(36, 36, 36) !important;
+    background-color: white;
+    border: solid 0.5px white;
+    margin-right: 15px !important;  
+}
+
+.sombra-nav {
+    box-shadow: 2px 2px 5px #666;
 }
