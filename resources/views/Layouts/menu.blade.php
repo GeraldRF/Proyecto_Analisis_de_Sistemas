@@ -54,10 +54,10 @@
                     @if (!Auth::user())
                         <ul class="nav justify-content-center" style="gap: 10px">
                             <li class="nav-item">
-                                <a class="nav-link btn-sesion-r" href="/registrarse">Registrate</a>
+                                <a class="btn-sesion-r" href="/registrarse">Registrate</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btn-sesion-i" href="/iniciar-sesion">Iniciar sesion</a>
+                                <a class="btn-sesion-i" href="/iniciar-sesion">Iniciar sesion</a>
                             </li>
                         </ul>
                     @else
@@ -68,9 +68,9 @@
                             <li class="nav-item">
                                 <form method="POST" action="{{ route('logout') }}">
                                     @csrf
-                                    <a class="nav-link btn-sesion-i" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                    <a href="{{ route('logout') }}" onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                        {{ __('Cerrar sesión') }}
+                                        <img src="/imagenes/icono-cerrar-sesion.png" title="Cerrar sesión" style="max-width: 40px; margin-right: 10px">
                                     </a>
                                 </form>
                             </li>
@@ -86,6 +86,9 @@
 
     <footer>
     </footer>
+    
 </body>
-
+<script>
+    $()
+</script>
 </html>

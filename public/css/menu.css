@@ -29,13 +29,22 @@
     color: white !important;
     border: solid 0.5px white;
     background-color: transparent;
+    margin-right: 15px !important; 
+    max-height: 30px;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    
 }
 
 .btn-sesion-r {
     color: rgb(36, 36, 36) !important;
     background-color: white;
     border: solid 0.5px white;
-    margin-right: 15px !important;  
+    max-height: 30px;
+    justify-self: center;
+    padding: .5rem 1rem;
+    text-decoration: none;
+   
 }
 
 .sombra-nav {
