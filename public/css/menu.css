@@ -50,3 +50,9 @@
     background: linear-gradient(90deg, rgba(39, 45, 74, 1) 0%, rgba(97, 116, 201, 1) 61%, rgba(94, 77, 153, 1) 93%);
     box-shadow: 2px 2px 5px #666;
 }
+
+.footer- {
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}

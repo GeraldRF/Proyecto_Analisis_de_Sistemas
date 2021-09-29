@@ -21,7 +21,7 @@
 <hr>
 </div>
 
-<div class="contenedor">
+<div class="table-">
 <h3 style="color:red;">Integrantes</h3>
 <table class="table table-striped table-inverse table-responsive">
     <thead class="thead-inverse">
