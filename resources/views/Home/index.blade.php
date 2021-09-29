@@ -1,9 +1,10 @@
 @extends('Layouts.menu')
 
-@section('title', "Inicio")
+@section('title', "Naviera PeP")
 
 @section('styles')
     <link href="{{ URL:: asset('css/home_index.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="css/home_slider.css">
 @endsection
 
 @section('scripts')
@@ -12,8 +13,9 @@
 
 @section('body')
 
-<div class="contenedor">
+<x-home_slider></x-home_slider>
 
+<div class="contenedor">
 <div style="margin-bottom: 50px; margin-top:50px">
 <h1>Bienvenidos a la pagina de inicio</h1>
 <hr>
